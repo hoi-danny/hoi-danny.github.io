@@ -38,9 +38,7 @@ jobs:
       - name: Copy Marp static files
         run: |
           cp marp/index.html _site/marp/index.html
-          cp -R marp/practice/assets _site/marp/practice/
           cp -R marp/practice/styles _site/marp/practice/
-          cp -R marp/theory/assets _site/marp/theory/
           cp -R marp/theory/styles _site/marp/theory/
           cp -R marp/themes/. _site/marp/themes/
 

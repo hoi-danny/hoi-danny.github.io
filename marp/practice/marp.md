@@ -41,7 +41,7 @@ Lab12 : Monitoring 실습
 Lab13 : Alert Center 실습  
 Lab14 : 리소스 삭제 실습
 
-![diagram](./assets/diagram-02.png)
+![diagram](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/practice/diagram-02.png)
 
 ---
 
@@ -69,7 +69,7 @@ IAM을 통해 프로젝트를 생성하여 사용자를 추가하고 사용자�
 
 <div class="visual">
 
-<img src="./assets/diagram-03.png" class="diagram" />
+<img src="https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/practice/diagram-03.png" class="diagram" />
 
 </div>
 
@@ -83,7 +83,7 @@ IAM을 통해 프로젝트를 생성하여 사용자를 추가하고 사용자�
 
 ## IAM 엑세스 키 생성
 
-![diagram](./assets/diagram-04.png)
+![diagram](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/practice/diagram-04.png)
 
 ## 1 프로젝트 지정
 
@@ -127,7 +127,7 @@ IAM 엑세스 키가 생성된 이후에는 수정 불가
 
 10.  보안 그룹 생성 클릭 / 11. 보안 그룹 이름 입력 : webserver / 12. 인바운드 정보 입력 :
 
-![diagram](./assets/diagram-05.png)
+![diagram](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/practice/diagram-05.png)
 
 ---
 
@@ -157,7 +157,7 @@ ALTER USER 'admin'@'%' IDENTIFIED WITH mysql_native_password BY 'admin1234';
 EOF
 ```
 
-![diagram](./assets/diagram-06.png)
+![diagram](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/practice/diagram-06.png)
 
 ---
 
@@ -234,7 +234,7 @@ EOF
 
 12. web_server_1, web_server_2 선택 / 13. 포트 입력: 80 / 14. 대상 추가 / 15. [다음] 버튼 클릭
 
-![diagram](./assets/diagram-08.png)
+![diagram](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/practice/diagram-08.png)
 
 잠깐           Tip! :   상태 확인 더 알아보기
 
@@ -270,7 +270,7 @@ ex) 상태전환기준(성공)이 5로 설정되어 있다면, 연속 5회의 �
 
 [kakaocloud-edu.com](https://kakaocloud-edu.com)
 
-![diagram](./assets/diagram-09.png)
+![diagram](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/practice/diagram-09.png)
 
 ---
 

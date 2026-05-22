@@ -31,9 +31,7 @@ mkdir -p _site/marp/practice _site/marp/theory _site/marp/themes
 npx -y @marp-team/marp-cli@latest marp/practice/marp.md --html --allow-local-files --theme-set=marp/themes/kakao.css -o _site/marp/practice/index.html
 npx -y @marp-team/marp-cli@latest marp/theory/marp.md --html --allow-local-files --theme-set=marp/themes/kakao.css -o _site/marp/theory/index.html
 cp marp/index.html _site/marp/index.html
-cp -R marp/practice/assets _site/marp/practice/
 cp -R marp/practice/styles _site/marp/practice/
-cp -R marp/theory/assets _site/marp/theory/
 cp -R marp/theory/styles _site/marp/theory/
 cp -R marp/themes/. _site/marp/themes/
 ```

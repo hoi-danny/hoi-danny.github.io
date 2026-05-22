@@ -8,7 +8,7 @@ html: false
 
 # PREVIEW OF LAB
 
-![width:700px](./assets/diagram-01.png)
+![width:700px](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/theory/diagram-01.png)
 
 ---
 
@@ -60,7 +60,7 @@ html: false
 
 # 서비스 모델 : IaaS, PaaS, SaaS
 
-![height:447px](./assets/service-model-diagram.png)
+![height:447px](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/theory/service-model-diagram.png)
 
 ---
 
@@ -100,7 +100,7 @@ TGW: Transit Gateway
 
 # 카카오클라우드의 다양한 서비스
 
-![height:344px](./assets/cloud-services-overview.png)
+![height:344px](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/theory/cloud-services-overview.png)
 
 ---
 
@@ -108,7 +108,7 @@ TGW: Transit Gateway
 
 # 카카오클라우드의 차별성
 
-![diagram](./assets/cloud-differentiators.png)
+![diagram](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/theory/cloud-differentiators.png)
 
 ---
 
@@ -146,7 +146,7 @@ TGW: Transit Gateway
 
 # IAM
 
-![width:50%](./assets/iam-structure.png)
+![width:50%](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/theory/iam-structure.png)
 
 ---
 
@@ -202,7 +202,7 @@ TGW: Transit Gateway
 • 시스템 장애나 데이터 손실 상황에서 데이터를 빠르게 복구하는 데 도움  
 • 백업 데이터는 데이터 분석, 테스트, 개발 등 다양한 목적으로 활용
 
-![diagram](./assets/mysql-backup-lifecycle.png)
+![diagram](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/theory/mysql-backup-lifecycle.png)
 
 ---
 
@@ -235,7 +235,7 @@ TGW: Transit Gateway
 동등한 분배 : 서버 간에 균등한 트래픽 분배를 목표로 하므로, 초기 설정에서는 모든 서버에 동등한 부하가 생김  
 쉬운 구성 : 라운드 로빈은 상대적으로 구현 및 설정이 쉬워서 소규모 환경에서 빠르게 설정하고 시작할 수 있음
 
-![diagram](./assets/load-balancer-round-robin.png)
+![diagram](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/theory/load-balancer-round-robin.png)
 
 ---
 
@@ -253,7 +253,7 @@ TGW: Transit Gateway
 
 동일한 IP 헤더를 사용하는 클라이언트는 반드시 동일한 대상에게 트래픽을 전송
 
-![diagram](./assets/load-balancer-least-connections.png)
+![diagram](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/theory/load-balancer-least-connections.png)
 
 ---
 
@@ -275,7 +275,7 @@ VPC안에 기존에 생성한 AZ1에 있는 웹서버와 AZ2에 새롭게
 2. DNS 서비스 설정
 3. DNS 서비스 동작 확인
 
-![height:215px](./assets/multi-az-dns-lab.png)
+![height:215px](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/theory/multi-az-dns-lab.png)
 
 ---
 
@@ -297,4 +297,4 @@ Monitoring이란?
 
 미리 등록된 정책에 따라 장애가 발생할 시, 알림을 통해 모니터링 이력을 조회하며 장애를 빠르게 확인
 
-![diagram](./assets/monitoring-architecture.png)
+![diagram](https://objectstorage.kr-central-2.kakaocloud.com/v1/b6a9201d6cca4af591ff15a779724de1/doc2edu-sync/essential_basic_course/theory/monitoring-architecture.png)
