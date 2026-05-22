@@ -32,7 +32,7 @@
       }
 
       main {
-        width: min(1080px, calc(100% - 32px));
+        width: min(1120px, calc(100% - 32px));
         margin: 0 auto;
         padding: 56px 0 72px;
       }
@@ -79,7 +79,7 @@
 
       @media (min-width: 760px) {
         .grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-template-columns: repeat(3, minmax(0, 1fr));
         }
       }
 
@@ -167,41 +167,51 @@
     <main>
       <section class="hero">
         <span class="eyebrow">GitHub Pages</span>
-        <h1>한 저장소에서 Marp와 Slidev를 함께 배포합니다.</h1>
+        <h1>Marp 자료를 GitHub Pages로 배포합니다.</h1>
         <p class="intro">
-          이 페이지는 `hoi-danny.github.io`의 시작 화면입니다. 아래 링크를 통해 각각의 슬라이드 버전을
-          바로 확인할 수 있습니다.
+          이 페이지는 `hoi-danny.github.io`의 시작 화면입니다. 아래 링크를 통해 Marp 실습 교재,
+          이론 교재, 테마 파일을 바로 확인할 수 있습니다.
         </p>
 
         <div class="grid">
           <article class="card">
             <p class="label">Marp</p>
-            <h2>/marp</h2>
+            <h2>/marp/practice</h2>
             <p class="desc">
-              Marp Markdown을 정적 HTML로 빌드한 버전입니다. 문서형 슬라이드 확인에 적합합니다.
+              `marp/practice/marp.md`를 정적 HTML로 빌드한 실습 교재입니다.
             </p>
             <div class="actions">
-              <a class="button primary" href="/marp/">Marp 열기</a>
+              <a class="button primary" href="/marp/practice/">실습 열기</a>
             </div>
           </article>
 
           <article class="card">
-            <p class="label">Slidev</p>
-            <h2>/slidev</h2>
+            <p class="label">Marp</p>
+            <h2>/marp/theory</h2>
             <p class="desc">
-              Slidev SPA로 빌드한 버전입니다. 인터랙티브한 웹 슬라이드를 확인할 수 있습니다.
+              `marp/theory/marp.md`를 정적 HTML로 빌드한 이론 교재입니다.
             </p>
             <div class="actions">
-              <a class="button primary" href="/slidev/">Slidev 열기</a>
+              <a class="button primary" href="/marp/theory/">이론 열기</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <p class="label">Theme</p>
+            <h2>/marp/themes</h2>
+            <p class="desc">
+              Marp 빌드에 사용하는 KakaoCloud 테마 CSS와 템플릿 설명 파일입니다.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="/marp/themes/">테마 열기</a>
             </div>
           </article>
         </div>
 
         <p class="footnote">
-          배포 소스는 GitHub Actions 기준으로 자동 빌드되며, 루트 페이지는 두 경로를 연결하는 허브 역할을 합니다.
+          배포 소스는 GitHub Actions 기준으로 자동 빌드되며, `practice`, `theory`, `themes` 경로만 포함됩니다.
         </p>
       </section>
     </main>
   </body>
 </html>
-

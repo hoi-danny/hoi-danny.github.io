@@ -1,4 +1,4 @@
-name: Deploy Slides to GitHub Pages
+name: Deploy Marp Slides to GitHub Pages
 
 on:
   push:
@@ -26,26 +26,23 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-          cache-dependency-path: slidev/package-lock.json
-
-      - name: Install Slidev dependencies
-        working-directory: slidev
-        run: npm ci
-
       - name: Prepare site output
-        run: mkdir -p _site/marp _site/slidev
+        run: mkdir -p _site/marp/practice _site/marp/theory _site/marp/themes
 
-      - name: Build Marp slides
-        run: npx @marp-team/marp-cli@latest marp/slides.md --html --allow-local-files -o _site/marp/index.html
+      - name: Build Marp practice slides
+        run: npx -y @marp-team/marp-cli@latest marp/practice/marp.md --html --allow-local-files --theme-set=marp/themes/kakao.css -o _site/marp/practice/index.html
 
-      - name: Build Slidev slides
-        working-directory: slidev
-        run: npm run build:pages -- --out ../_site/slidev
+      - name: Build Marp theory slides
+        run: npx -y @marp-team/marp-cli@latest marp/theory/marp.md --html --allow-local-files --theme-set=marp/themes/kakao.css -o _site/marp/theory/index.html
+
+      - name: Copy Marp static files
+        run: |
+          cp marp/index.html _site/marp/index.html
+          cp -R marp/practice/assets _site/marp/practice/
+          cp -R marp/practice/styles _site/marp/practice/
+          cp -R marp/theory/assets _site/marp/theory/
+          cp -R marp/theory/styles _site/marp/theory/
+          cp -R marp/themes/. _site/marp/themes/
 
       - name: Copy landing page
         run: cp index.html _site/index.html
@@ -70,4 +67,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

@@ -1,0 +1,291 @@
+/*
+ * @theme kakao
+ * @size kakao-landscape 1105px 792px
+ * @size kakao-portrait 792px 1105px
+ */
+@import 'default';
+
+:root {
+  --kc-ink: #202124;
+  --kc-muted: #5f6368;
+  --kc-line: #d7dbe2;
+  --kc-yellow: #fee500;
+  --kc-blue: #2563eb;
+  --kc-green: #0f766e;
+  --kc-bg: #fbfbfa;
+  --kc-soft: #f4f6f8;
+  --kc-code: #f7f8fa;
+}
+
+section {
+  font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  background: var(--kc-bg);
+  color: var(--kc-ink);
+  padding: 42px 52px;
+  font-size: 17px;
+  letter-spacing: 0;
+}
+
+section::after {
+  color: var(--kc-muted);
+  font-size: 13px;
+  right: 32px;
+  bottom: 22px;
+}
+
+section::before {
+  content: "©Kakao Enterprise Corp. All Rights Reserved.";
+  position: absolute;
+  left: 32px;
+  bottom: 22px;
+  color: #bfc1c5;
+  font-size: 13px;
+}
+
+section.portrait {
+  padding: 44px 42px;
+  font-size: 15px;
+}
+
+section.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  background: linear-gradient(180deg, #fbfbf6 0%, #fffff3 30%, #fff67a 58%, #ffe900 100%);
+}
+
+section.cover h1 {
+  border: 0;
+  padding: 0;
+  font-size: 52px;
+  line-height: 1.05;
+}
+
+section.cover .brand {
+  margin-top: 84px;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 0.95;
+}
+
+section.section-divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+section.section-divider .section-no {
+  color: var(--kc-green);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+section.section-divider h1 {
+  border-left-width: 12px;
+  font-size: 46px;
+}
+
+h1 {
+  margin: 0 0 14px;
+  padding-left: 16px;
+  border-left: 8px solid var(--kc-yellow);
+  color: #111827;
+  font-size: 30px;
+  line-height: 1.18;
+}
+
+h2 {
+  margin: 8px 0 6px;
+  color: var(--kc-blue);
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+h3 {
+  margin: 7px 0 4px;
+  color: #111827;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+h4 {
+  margin: 5px 0 3px;
+  color: var(--kc-muted);
+  font-size: 13px;
+  line-height: 1.12;
+}
+
+section.portrait h1 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 1.15;
+}
+
+section.portrait h2 {
+  margin: 5px 0 4px;
+  font-size: 14px;
+  line-height: 1.18;
+}
+
+p {
+  margin: 8px 0;
+  line-height: 1.48;
+}
+
+.eyebrow,
+section > strong:first-child {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--kc-green);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.slide-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 22px;
+  align-items: start;
+}
+
+section.portrait .slide-grid {
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.content,
+.visual {
+  min-width: 0;
+}
+
+.visual {
+  text-align: center;
+}
+
+.text-block {
+  margin: 6px 0;
+  line-height: 1.34;
+}
+
+.compact {
+  font-size: 0.76em;
+}
+
+section.portrait .compact {
+  font-size: 0.74em;
+}
+
+section.contents {
+  font-size: 14px;
+}
+
+section.contents img {
+  display: block;
+  max-width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  margin: 34px auto 0;
+  border: 1px solid var(--kc-line);
+  background: white;
+}
+
+section.lab-preview img,
+section.concept-visual img,
+section.visual-focus img,
+img.diagram {
+  display: block;
+  max-width: 100%;
+  max-height: 430px;
+  object-fit: contain;
+  margin: 12px auto 0;
+  border: 1px solid var(--kc-line);
+  background: white;
+}
+
+section.visual-focus img {
+  max-height: 560px;
+}
+
+section.portrait img.diagram,
+section.portrait img[alt="diagram"] {
+  max-height: 640px;
+}
+
+section.procedure-shot img {
+  max-height: 760px;
+}
+
+section.cleanup {
+  font-size: 10px;
+}
+
+section.cleanup h1 {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+section.cleanup li {
+  margin: 0 0 3px;
+  line-height: 1.35;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-size: 0.72em;
+}
+
+section.portrait table {
+  margin: 5px 0;
+  font-size: 0.68em;
+}
+
+section.table-compact table,
+section.reference-table table {
+  font-size: 0.58em;
+}
+
+th,
+td {
+  border: 1px solid var(--kc-line);
+  padding: 5px 7px;
+  vertical-align: top;
+}
+
+section.portrait th,
+section.portrait td {
+  padding: 4px 6px;
+}
+
+th {
+  background: var(--kc-soft);
+  font-weight: 700;
+}
+
+pre {
+  margin: 8px 0;
+  padding: 10px 12px;
+  border: 1px solid var(--kc-line);
+  background: var(--kc-code);
+  font-size: 0.6em;
+  line-height: 1.28;
+}
+
+section.portrait pre {
+  margin: 5px 0;
+  padding: 8px 10px;
+  font-size: 0.48em;
+  line-height: 1.22;
+}
+
+section.code-terminal pre,
+section.code-explain pre {
+  font-size: 0.44em;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marp Materials</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Noto Sans KR", "Pretendard", "Malgun Gothic", sans-serif;
+        color: #1d1d1b;
+        background: #fbf8ef;
+      }
+
+      main {
+        width: min(960px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 64px;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 2.4rem;
+        line-height: 1.15;
+      }
+
+      .intro {
+        max-width: 720px;
+        margin: 0;
+        color: #57534e;
+        line-height: 1.7;
+      }
+
+      .grid {
+        display: grid;
+        gap: 16px;
+        margin-top: 28px;
+      }
+
+      @media (min-width: 720px) {
+        .grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      .card {
+        min-height: 210px;
+        padding: 22px;
+        border: 1px solid rgba(29, 29, 27, 0.12);
+        border-radius: 8px;
+        background: #fffdf7;
+        box-shadow: 0 14px 32px rgba(74, 54, 26, 0.08);
+      }
+
+      .label {
+        margin: 0 0 10px;
+        color: #7c5b17;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 1.4rem;
+      }
+
+      p {
+        line-height: 1.65;
+      }
+
+      a {
+        color: #5c430d;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Marp Materials</h1>
+      <p class="intro">실습 교재, 이론 교재, 테마 파일을 나누어 제공합니다.</p>
+
+      <div class="grid">
+        <article class="card">
+          <p class="label">Practice</p>
+          <h2>실습 교재</h2>
+          <p><a href="/marp/practice/">/marp/practice/</a></p>
+        </article>
+
+        <article class="card">
+          <p class="label">Theory</p>
+          <h2>이론 교재</h2>
+          <p><a href="/marp/theory/">/marp/theory/</a></p>
+        </article>
+
+        <article class="card">
+          <p class="label">Themes</p>
+          <h2>테마 파일</h2>
+          <p><a href="/marp/themes/">/marp/themes/</a></p>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

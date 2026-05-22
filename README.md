@@ -1,16 +1,20 @@
-# GitHub Pages Slide Deployment
+# GitHub Pages Marp Deployment
 
-이 저장소는 하나의 GitHub Pages 사이트에서 두 가지 슬라이드 엔진을 함께 배포하도록 구성되어 있습니다.
+이 저장소는 GitHub Pages에서 Marp 실습 교재, 이론 교재, 테마 파일을 배포하도록 구성되어 있습니다.
 
-- `https://hoi-danny.github.io/marp/`
-- `https://hoi-danny.github.io/slidev/`
+## 호스팅 도메인
+
+- 기본 도메인: `https://hoi-danny.github.io/`
+- Marp 허브: `https://hoi-danny.github.io/marp/`
+- `https://hoi-danny.github.io/marp/practice/`
+- `https://hoi-danny.github.io/marp/theory/`
+- `https://hoi-danny.github.io/marp/themes/`
 
 ## 소스 위치
 
-- Marp 원본: `marp/slides.md`
-- Slidev 원본: `slidev/slides.md`
-
-기존 루트의 `marptest2.md`, `slidevtest2.md`는 참고용 원본으로 남겨두었습니다.
+- 실습 교재: `marp/practice/marp.md`
+- 이론 교재: `marp/theory/marp.md`
+- 테마 파일: `marp/themes/kakao.css`
 
 ## 배포 방법
 
@@ -20,20 +24,18 @@
 
 ## 로컬 확인
 
-Slidev 미리보기:
+Marp HTML 빌드:
 
 ```bash
-cd slidev
-npm install
-npm run dev
-```
-
-Slidev GitHub Pages 빌드:
-
-```bash
-cd slidev
-npm install
-npm run build:pages
+mkdir -p _site/marp/practice _site/marp/theory _site/marp/themes
+npx -y @marp-team/marp-cli@latest marp/practice/marp.md --html --allow-local-files --theme-set=marp/themes/kakao.css -o _site/marp/practice/index.html
+npx -y @marp-team/marp-cli@latest marp/theory/marp.md --html --allow-local-files --theme-set=marp/themes/kakao.css -o _site/marp/theory/index.html
+cp marp/index.html _site/marp/index.html
+cp -R marp/practice/assets _site/marp/practice/
+cp -R marp/practice/styles _site/marp/practice/
+cp -R marp/theory/assets _site/marp/theory/
+cp -R marp/theory/styles _site/marp/theory/
+cp -R marp/themes/. _site/marp/themes/
 ```
 
 Marp는 GitHub Actions에서 `@marp-team/marp-cli`로 정적 HTML을 생성합니다.
